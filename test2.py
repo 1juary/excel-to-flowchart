@@ -1,5 +1,4 @@
 import pydot
-import openpyxl
 import xlrd
 
 ExcelFileName = 'example.xls'
