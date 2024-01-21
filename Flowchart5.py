@@ -46,4 +46,4 @@ def create_graph_from_excel(file_path, sheet_name, DOE_name):
                 graph.edge(node[q][p], node[0][p+1], dir="forward", arrowhead="normal", style="")
 
 
-    graph.render('example1_graph', format='png')
+    graph.render(DOE_name, format='png')

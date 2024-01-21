@@ -1,5 +1,5 @@
 digraph {
-	graph [fontname=SimSun label=DOE_name labelloc=t]
+	graph [fontname=SimSun label=example labelloc=t]
 	Step1 [fontname=SimSun shape=box style="rounded, filled"]
 	Step2 [fontname=SimSun shape=box style="rounded, filled"]
 	Step3 [fontname=SimSun shape=box style="rounded, filled"]
