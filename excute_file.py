@@ -1,10 +1,14 @@
 import tkinter as tk
 from Flowchart5 import create_graph_from_excel
 import os
+import sys
 
 def execute_flowchart():
     file_name = entry.get()
-    file_path = os.path.abspath(os.path.dirname(__file__))
+    if getattr(sys, 'frozen', False):
+        file_path = os.path.dirname(sys.executable)
+    else:
+        file_path = os.path.abspath(os.path.dirname(__file__))
     file_path_with_xls = os.path.join(file_path, file_name + '.xls')
     sheet_name = 'Sheet1'
     DOE_name = file_name
